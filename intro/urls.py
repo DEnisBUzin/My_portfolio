@@ -16,11 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from demo.views import omlet, buter, pasta
+from galary.views import projects
 
 urlpatterns = [
-    path('omlet/', omlet),
-    path('pasta/', pasta),
-    path('buter/', buter),
+    path('projects/', projects, name='projects'),
 
 ]
